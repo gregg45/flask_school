@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body{
+	background-color: lightblue;
+}
+</style>
+<script type="text/javascript">
+	alert('Thanks for filling out my form!')
+</script>
+<body>
+    <h1>Thanks for Submitting!</h1>
+    <br>
+    {%if not people_in_school%}
+        <p>You are the first person using ToucanTech at your school!</p>
+    {%else%}
+    {% block content %}
+        <h1>{{name}}</h1>
+        {{html_table | safe}}
+    {% endblock %}
+    <br>
+    {%endif%}
+    <p>{{ concated }}</p>
+</body>
+</html>

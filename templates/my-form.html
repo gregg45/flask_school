@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheets/overall.css') }}">
+</head>
+<body>
+    <h1>Sign Up</h1>
+    <h2>Create a new account</h2>
+    <form action="." method="POST">
+    <ul class="form-style-1">
+        <li><label>Full Name</label>
+         <input type="text" name="first_name" placeholder="First">
+         <input type="text" name="last_name" placeholder="Last">
+        </li>
+        <li><label>Email Address</label>
+            <input type="text" name="email">
+        </li>
+        <li><label>School</label>
+            <input type="text" name="school">
+        </li>
+        <li>
+            <input type="submit" name="my-form" value="Send">
+        </li>
+    </ul>
+    </form>
+</body>
+</html>
